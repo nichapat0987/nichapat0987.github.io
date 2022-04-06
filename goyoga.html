@@ -1,0 +1,265 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Y4E</title>
+  </head>
+  <body style="background-image: url(pic/natural.jpg); background-size: cover; background-attachment: fixed; height: 400%;">
+    <!-- NAVBAR -->
+    <nav class="white">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo brown-text"><i class="material-icons green-text">filter_hdr</i>Y4E</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="logged-in" style="display: none;">
+              <a href="index.html" class="brown-text" id="homepage">Home</a>
+            </li>
+            <li class="logged-in" style="display: none;">
+              <a href="#" class="brown-text modal-trigger" data-target="modal-account">Account</a>
+            </li>
+            <li class="logged-in" style="display: none;">
+                <a href="goyoga.html" class="brown-text" id="goYoga">Yoga</a>
+              </li>
+            <li class="logged-in" style="display: none; padding-top: 3%;">
+              <button class="button-18" role="button">
+                 <a href="index.html" class="white-text" id="logout">Logout</a>
+              </button>
+            </li>
+            <li class="logged-out" style="display: none;">
+              <a href="#" class="brown-text modal-trigger" data-target="modal-login">Login</a>
+            </li>
+            <li class="logged-out" style="display: none;">
+              <a href="#" class="brown-text modal-trigger" data-target="modal-signup">Sign up</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+  
+    <!-- SIGN UP MODAL -->
+    <div id="modal-signup" class="modal">
+      <div class="modal-content">
+        <h4>Sign up</h4><br>
+        <form id="signup-form">
+          <div class="input-field">
+            <input type="email" id="signup-email" required="">
+            <label for="signup-email">Email address</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="signup-password" required="">
+            <label for="signup-password">Password</label>
+          </div>
+          <div class="input-field">
+            <input type="text" id="signup-username" required="">
+            <label for="signup-username">Username</label>
+          </div>
+          <div class="input-field">
+            <input type="text" id="signup-weight" required="">
+            <label for="signup-weight">Weight</label>
+          </div>
+          <button class="btn brown darken-3 z-depth-0">Sign up</button>
+        </form>
+      </div>
+    </div>
+  
+    <!-- LOGIN MODAL -->
+    <div id="modal-login" class="modal">
+      <div class="modal-content">
+        <h4>Login</h4><br>
+        <form id="login-form">
+          <div class="input-field">
+            <input type="email" id="login-email" required="">
+            <label for="login-email">Email address</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="login-password" required="">
+            <label for="login-password">Your password</label>
+          </div>
+          <button class="btn brown darken-3 z-depth-0">Login</button>
+        </form>
+      </div>
+    </div>
+  
+    <!-- ACCOUNT MODAL -->
+    <div id="modal-account" class="modal">
+      <div class="modal-content center-align">
+        <h4>Account details</h4><br>
+        <div class="account-details" ></div>
+      </div>
+    </div>
+    
+    <!-- Home Login -->
+    <li class="logged-in" style="display: none;">
+    <div class="container" style="width: 100%;">
+    <div class="card-container">
+        <div class="card u-clearfix">
+          <div class="card-body">
+            <span class="card-number card-circle subtle">01</span>
+            <h2 class="card-title">Hatha Yoga</h2>
+            <span class="card-description2">Slower moving than a Vinyasa yoga practice, but it can be challenging, stimulating, or soft, depending on the circumstances.</span>
+            <span class="card-description subtle">
+              - Improve balance and core strength
+              - Relieve neck and back pain
+              - Strengthen flexibility
+            </span>
+            <button type="button" class="simple">
+              <a href="tutorial.html" class="black-text">
+                LEARN
+              </a>
+            </button>
+          </div>
+          <img src="piccard/hatha.jpeg" alt="" class="card-media" />
+          <div class="hatha-pose">
+            <img src="pic-rm/mountain-rm.jpg" style="height: 200px;"/>
+            <img src="pic-rm/palm-rm.jpg" style="height: 200px;"/>
+            <img src="pic-rm/chair-rm.jpg" style="height: 200px;"/>
+            <img src="pic-rm/star-rm.jpg" style="height: 200px;"/>
+            <br></br>
+            <img src="pic-rm/prayer-rm.jpg" style="height: 200px;"/>
+            <img src="pic-rm/triangle-rm.jpg" style="height: 200px;"/>
+            <p style="position: absolute; top:530px; left:110px;">1. mountain</p>
+            <p style="position: absolute; top:530px; left:300px;">2. palm tree</p>
+            <p style="position: absolute; top:530px; left:490px;">3. chair</p>
+            <p style="position: absolute; top:530px; left:690px;">4. star</p>
+            <p style="position: absolute; top:750px; left:320px;">5. prayer</p>
+            <p style="position: absolute; top:750px; left:500px;">6. triangle</p>
+          </div>
+        </div>
+        <div class="card-shadow"></div>
+      </div>
+
+      <div class="card-container">
+        <div class="card u-clearfix">
+          <div class="card-body2">
+            <span class="card-number card-circle subtle">02</span>
+            <h2 class="card-title">Vinyasa Yoga</h2>
+            <span class="card-description2">Style of yoga characterized by stringing postures together so that you move from one to another, seamlessly, using breath.</span>
+            <span class="card-description subtle">
+              - Endurance and strength training
+              - Stability and balance
+              - Cardio workout
+            </span>
+            <button type="button" class="simple">
+              <a href="tutorial2.html" class="black-text">
+                LEARN
+              </a>
+            </button>
+          </div>
+          <img src="piccard/vinyasa.jpeg" alt="" class="card-media-left" />
+          <div class="vinyasa-pose">
+            <img src="pic-rm/moun-rm.jpg" style="height: 200px;"/>
+            <img src="pic-rm/cresent-rm.jpg" style="height: 200px;"/>
+            <img src="pic-rm/half-rm.jpg" style="height: 200px;"/>
+            <img src="pic-rm/chair-rm.jpg" style="height: 200px;"/>
+            <br></br><br></br>
+            <img src="pic-rm/angle-rm.png" style="height: 200px;"/>
+            <img src="pic-rm/warriorI-rm.jpg" style="height: 200px;"/>
+            <p style="position: absolute; top:570px; left:110px;">1. mountain</p>
+            <p style="position: absolute; top:570px; left:280px;">2. cresent moon</p>
+            <p style="position: absolute; top:570px; left:490px;">3. forward bend</p>
+            <p style="position: absolute; top:570px; left:710px;">4. chair</p>
+            <p style="position: absolute; top:840px; left:270px;">5. side angle</p>
+            <p style="position: absolute; top:840px; left:500px;">6. warrior I</p>
+          </div>
+        </div>
+        <div class="card-shadow"></div>
+      </div>
+
+      <div class="card-container">
+        <div class="card u-clearfix">
+          <div class="card-body">
+            <span class="card-number card-circle subtle">03</span>
+            <h2 class="card-title">Iyengar Yoga</h2>
+            <span class="card-description2">A form of hatha yoga that focuses on proper alignment and precise technique through slower movements and an emphasis on quality.</span>
+            <span class="card-description subtle">
+              - Toned muscles
+              - Relieve neck and back pain
+              - Strengthen flexibility
+            </span>
+            <button type="button" class="simple">
+              <a href="tutorial3.html" class="black-text">
+                LEARN
+              </a>
+            </button>
+          </div>
+          <img src="piccard/iyengar.jpeg" alt="" class="card-media" />
+          <div class="iyengar-pose">
+            <img src="pic-rm/mountain-rm.jpg" style="height: 200px;"/>
+            <img src="pic-rm/half2-rm.jpg" style="height: 150px;"/>
+            <img src="pic-rm/bend-rm.jpg" style="height: 100px; width:200px"/>
+            <img src="pic-rm/triangle-rm.jpg" style="height: 200px;"/>
+            <br></br><br></br>
+            <img src="pic-rm/warriorI-rm.jpg" style="height: 200px;"/>
+            <img src="pic-rm/side-rm.jpg" style="height: 200px;"/>
+            <p style="position: absolute; top:530px; left:120px;">1. mountain</p>
+            <p style="position: absolute; top:530px; left:280px;">2. half forward</p>
+            <p style="position: absolute; top:530px; left:445px;">3. downward dog</p>
+            <p style="position: absolute; top:530px; left:660px;">4. triangle</p>
+            <p style="position: absolute; top:800px; left:300px;">5. warrior I</p>
+            <p style="position: absolute; top:800px; left:510px;">6. side angle</p>
+          </div>
+        </div>
+        <div class="card-shadow"></div>
+      </div>
+      </div>
+      </li>
+
+    <!-- Home Not Login -->
+  <li class="logged-out" style="display: none;">
+    <div class="container" style="margin-top: 40px;">
+      <p>Not Login</p>
+    </div>
+    </li>
+    
+    
+    <script src="firebase-app.js"></script>
+    <script src="firebase-auth.js"></script>
+    <script src="firebase-firestore.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBh_vKw1eozno1VVGaedDXgTJhNljWfUvk",
+      authDomain: "yoga-data-51fbc.firebaseapp.com",
+      projectId: "yoga-data-51fbc",
+      storageBucket: "yoga-data-51fbc.appspot.com",
+      messagingSenderId: "661341190469",
+      appId: "1:661341190469:web:d99092212b6e577679e62c",
+      measurementId: "G-GMZ0T8EJ1M"
+      };
+      firebase.initializeApp(config);
+      
+      // make auth and firestore references
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+  
+      // update firestore settings
+      db.settings({ timestampsInSnapshots: true });
+    </script>
+    
+    <script>
+      $( window ).scroll( function(){
+      var ypos = $( window ).scrollTop(); //pixels the site is scrolled down
+      var visible = $( window ).height(); //visible pixels
+      const img_height = 1080; //replace with height of your image
+      var max_scroll = img_height - visible; //number of pixels of the image not visible at bottom
+    //change position of background-image as long as there is something not visible at the bottom  
+    if ( max_scroll > ypos) {
+        $('body').css('background-position', "center -" + ypos + "px");
+      } else {
+        $('body').css('background-position', "center -" + max_scroll + "px");
+      }
+    });
+    </script>
+  
+      <!-- Compiled and minified JavaScript -->
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src ="sketch.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
